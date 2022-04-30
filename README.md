@@ -11,9 +11,9 @@
 2. Install dependencies in `server` and `app` folders using `npm install`.
 3. Create a `.env` file for environment variables of the database.
 ```
-  DB_USERNAME=root
-  DB_PASSWORD=123
-  DB_HOST=localhost
+  DB_USERNAME=
+  DB_PASSWORD=
+  DB_HOST=
   DB_DATABASE=budget_manager
   DB_DIALECT=mysql
 ```
