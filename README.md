@@ -1,12 +1,12 @@
-## CHALLENGE FULL STACK - JavaScript - Alkemy
+# Challenge Full Stack - JavaScript - Alkemy
 
-# Built using
+## Built using
 * JS
 * Node - Express
 * React - HTML - CSS - Bootstrap
 * MySQL
 
-# Using this project
+## Using this project
 1. Clone project.
 2. Install dependencies in `server` and `app` folders with npm install. 
 3. Create a `.env` file for environment variables of the database.
