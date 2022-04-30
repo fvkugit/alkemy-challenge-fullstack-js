@@ -19,5 +19,5 @@
 ```
 4. Execute SQL script located in `/server/database/`
 5. Run react aplication using `npm start`
-6. Run back using `node app`
+6. Run backend using `node app`
 7. Done
