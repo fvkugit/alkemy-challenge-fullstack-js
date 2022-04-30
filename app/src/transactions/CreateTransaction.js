@@ -11,7 +11,7 @@ const CreateTransaction = () => {
     useEffect(()=>{
         getCategories()
     },[])
-    const[categoryId, setCategory] = useState(8)
+    const[categoryId, setCategory] = useState(7)
     const[amount, setAmount] = useState('')
     const[desc, setDesc] = useState('')
     const[isIncome, setIncome] = useState(false)
@@ -38,7 +38,7 @@ const CreateTransaction = () => {
                 <form className="row gy-1 gx-5 align-items-center" onSubmit={store}>
                     <div className="input-group mb-3">
                         <label className="input-group-text">Select category: </label>
-                        <select className="form-select" onChange={(e) => (setCategory(e.target.value))} id="category" defaultValue={categoryId}>
+                        <select className="form-select" onChange={(e) => (setCategory(e.target.value))} id="category" value={categoryId}>
                             {categories.map( cat => (
                                 <option selected key={cat.id} value={cat.id}>{cat.name}</option>
                             ))}
@@ -50,12 +50,12 @@ const CreateTransaction = () => {
                     </div>
                     <div className="input-group">
                         <span className="input-group-text">Description</span>
-                        <textarea className="form-control" onChange={(e) => (setDesc(e.target.value))} aria-label="With textarea"></textarea>
+                        <textarea className="form-control" onChange={(e) => (setDesc(e.target.value))}></textarea>
                     </div>
                     <div className="row gy-1 align-items-center">
                         <div className="form-check form-switch ms-5">
                             <input style={{transform: "scale(1.8)"}} className="form-check-input" onChange={(e) => (setIncome(e.target.checked))} type="checkbox" role="switch" id="incomeSwitch" defaultChecked={false}/>
-                            <label className="form-check-label" htmlFor="incomeSwitch">{}</label>
+                            <label className="form-check-label">{}</label>
                         </div>
                     </div>
                     <div className="d-grid gap-2 mx-auto mt-5">
