@@ -52,10 +52,10 @@ const CreateTransaction = () => {
                         <span className="input-group-text">Description</span>
                         <textarea className="form-control" onChange={(e) => (setDesc(e.target.value))}></textarea>
                     </div>
-                    <div className="row gy-1 align-items-center">
-                        <div className="form-check form-switch ms-5">
+                    <div className="row gy-2">
+                        <div className="form-check form-switch ms-5 text-start">
                             <input style={{transform: "scale(1.8)"}} className="form-check-input" onChange={(e) => (setIncome(e.target.checked))} type="checkbox" role="switch" id="incomeSwitch" defaultChecked={false}/>
-                            <label className="form-check-label">{}</label>
+                            <label className="form-check-label ms-3">This transaction is {isIncome ? 'an income. 📈' : 'NOT an income. 📉'} </label>
                         </div>
                     </div>
                     <div className="d-grid gap-2 mx-auto mt-5">
