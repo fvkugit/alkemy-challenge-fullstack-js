@@ -11,7 +11,7 @@ const CreateTransaction = () => {
     useEffect(()=>{
         getCategories()
     },[])
-    const[categoryId, setCategory] = useState(7)
+    const[categoryId, setCategory] = useState(8)
     const[amount, setAmount] = useState('')
     const[desc, setDesc] = useState('')
     const[isIncome, setIncome] = useState(false)
